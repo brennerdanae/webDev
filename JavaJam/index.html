@@ -1,0 +1,230 @@
+<!doctype html>
+<html><head>
+    <title>JavaJam Coffee House</title>
+  <link rel="stylesheet" href="themes/pinkCoffee.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style>
+img {
+    width: 70%;
+    height: auto;
+}       
+th {
+    border-bottom: 1px solid #d6d6d6;
+}
+
+tr:nth-child(even) {
+    background: #e9e9e9;
+}
+    .video-container {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+</style>
+</head>
+
+
+<body><!-- Body Contains ALL your pages and your <div data-role="page" tags become indvidual site pages -->
+   
+    <!-- Start of first page: #Home -->
+    <div data-role="page" id="Home"  data-theme="a">
+ 
+        <div data-role="header"> <!-- This is your page header. -->
+            <h1>Welcome to JavaJam </h1><!-- Change the title for each page. -->
+            
+             <!-- this section goes in every JQM page it is the common 
+             navbar for the site -->
+            <div data-role="navbar">
+              <a data-role="button" class="ui-link" data-icon="home" 
+                 data-iconpos="left" href="#Home">Home</a>
+              <a data-role="button" class="ui-link" data-icon="star" 
+                 data-iconpos="left" href="#Menu">Menu</a> 
+              <a data-role="button" class="ui-link" data-icon="heart" 
+                 data-iconpos="left" href="#Music">Music</a>
+              <a data-role="button" class="ui-link" data-icon="grid" 
+                 data-iconpos="left" href="#Jobs">Jobs</a>
+            </div> <!--navbar -->
+       
+        </div><!-- /header -->
+ 
+        <div role="main" class="ui-content"><!-- The content of your page goes here -->
+            
+            <img src="coffee.jpg">
+            
+            <ul>
+                <li>Specialty Coffee and Tea</li>
+                <li>Bagels, Muffins, and Organic Snacks</li>
+                <li>Music and Poetry Readings</li>
+                <li>Open Mic Night Every Friday</li>
+            </ul>
+            
+        
+        </div><!-- /content -->
+ 
+        <div data-role="footer">
+            <h4>Copyright  2016 JavaJam Coffeee House</h4>
+        </div><!-- /footer -->
+ 
+    </div><!-- /end of home page -->
+    
+ 
+    <!-- Start of second page: #Menu -->
+    <div data-role="page" id="Menu"  data-theme="a">
+ 
+        <div data-role="header"> <!-- This is your page header. -->
+            <h1>Menu</h1><!-- Change the title for each page. -->
+            
+             <!-- this section goes in every JQM page it is the common 
+             navbar for the site -->
+            <div data-role="navbar">
+              <a data-role="button" class="ui-link" data-icon="home" 
+                 data-iconpos="left" href="#Home">Home</a>
+              <a data-role="button" class="ui-link" data-icon="star" 
+                 data-iconpos="left" href="#Menu">Menu</a> 
+              <a data-role="button" class="ui-link" data-icon="heart" 
+                 data-iconpos="left" href="#Music">Music</a>
+              <a data-role="button" class="ui-link" data-icon="grid" 
+                 data-iconpos="left" href="#Jobs">Jobs</a>
+            </div> <!--navbar -->
+       
+        </div><!-- /header -->
+ 
+        <div role="main" class="ui-content"><!-- The content of your page goes here -->
+            
+      <p> Menu Items </p>
+            
+    <table data-role="table" class="ui-responsive ui-shadow">
+      <thead>
+        <tr>
+          <th>Drink</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Espresso</td>
+          <td>$2.50</td>
+        </tr>
+        <tr>
+          <td>Macchiato</td>
+          <td>$3.00</td>
+        </tr>
+        <tr>
+          <td>Cappuccino</td>
+            <td>$3.50</td>
+        </tr>
+        <tr>
+          <td>Caffé Latte</td>
+          <td>$4.00</td>
+        </tr>
+        <tr>
+          <td>Caffé Mocha</td>
+          <td>$5.00</td>
+        </tr>
+      </tbody>
+    </table>
+
+            
+        </div><!-- /content -->
+ 
+        <div data-role="footer">
+            <h4>Copyright  2016 JavaJam Coffeee House</h4>
+        </div><!-- /footer -->
+ 
+    </div><!-- /end of menu page -->
+    
+    <!-- Start of third page: #Music -->
+    <div data-role="page" id="Music"  data-theme="a">
+ 
+        <div data-role="header"> <!-- This is your page header. -->
+            <h1>Music </h1><!-- Change the title for each page. -->
+            
+             <!-- this section goes in every JQM page it is the common 
+             navbar for the site -->
+            <div data-role="navbar">
+              <a data-role="button" class="ui-link" data-icon="home" 
+                 data-iconpos="left" href="#Home">Home</a>
+              <a data-role="button" class="ui-link" data-icon="star" 
+                 data-iconpos="left" href="#Menu">Menu</a>
+              <a data-role="button" class="ui-link" data-icon="heart" 
+                 data-iconpos="left" href="#Music">Music</a>
+              <a data-role="button" class="ui-link" data-icon="grid" 
+                 data-iconpos="left" href="#Jobs">Jobs</a>
+            </div> <!--navbar -->
+       
+        </div><!-- /header -->
+ 
+        <div role="main" class="ui-content"><!-- The content of your page goes here -->
+            
+            <p>Featured song of the month:</p>
+            
+            <div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/D7nN6yXcLu8" frameborder="0"  allowfullscreen></iframe></div>
+            
+        </div><!-- /content -->
+ 
+        <div data-role="footer">
+            <h4>Copyright  2016 JavaJam Coffeee House</h4>
+        </div><!-- /footer -->
+ 
+    </div><!-- /end of music page -->
+    
+    <!-- Start of third page: #Jobs -->
+    <div data-role="page" id="Jobs"  data-theme="a">
+ 
+        <div data-role="header"> <!-- This is your page header. -->
+            <h1>Jobs </h1><!-- Change the title for each page. -->
+            
+             <!-- this section goes in every JQM page it is the common 
+             navbar for the site -->
+            <div data-role="navbar">
+              <a data-role="button" class="ui-link" data-icon="home" 
+                 data-iconpos="left" href="#Home">Home</a>
+              <a data-role="button" class="ui-link" data-icon="star" 
+                 data-iconpos="left" href="#Menu">Menu</a>
+              <a data-role="button" class="ui-link" data-icon="heart" 
+                 data-iconpos="left" href="#Music">Music</a>
+              <a data-role="button" class="ui-link" data-icon="grid" 
+                 data-iconpos="left" href="#Jobs">Jobs</a>
+            </div> <!--navbar -->
+       
+        </div><!-- /header -->
+ 
+        <div role="main" class="ui-content"><!-- The content of your page goes here -->
+            <p>Enter your information below to be contacted about available positions.</p>
+            
+            <form method="post" action="demoform.asp">
+              <label for="fname">First name:</label>
+              <input type="text" name="fname" id="fname">
+                
+              <label for="lname">Last name:</label>
+              <input type="text" name="lname" id="lname">
+                
+              <label for="email">Email addres:</label>
+              <input type="text" name="email" id="email">
+                
+                  
+              <input type="submit" value="Submit" data-icon="check" data-iconpos="right" data-inline="true">
+            </form>
+  
+            
+        
+        </div><!-- /content -->
+ 
+        <div data-role="footer">
+            <h4>Copyright  2016 JavaJam Coffee House</h4>
+        </div><!-- /footer -->
+ 
+    </div><!-- /end of jobs page -->
